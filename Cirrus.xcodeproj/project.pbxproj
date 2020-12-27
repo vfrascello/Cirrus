@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61F78F882593010C00BE1E3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F78F872593010C00BE1E3D /* AppDelegate.swift */; };
+		61F78F8A2593010C00BE1E3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F78F892593010C00BE1E3D /* SceneDelegate.swift */; };
+		61F78F8C2593010C00BE1E3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F78F8B2593010C00BE1E3D /* ViewController.swift */; };
+		61F78F8F2593010C00BE1E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61F78F8D2593010C00BE1E3D /* Main.storyboard */; };
+		61F78F912593010E00BE1E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61F78F902593010E00BE1E3D /* Assets.xcassets */; };
+		61F78F942593010E00BE1E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61F78F922593010E00BE1E3D /* LaunchScreen.storyboard */; };
+		61F78F9F2593010E00BE1E3D /* CirrusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F78F9E2593010E00BE1E3D /* CirrusTests.swift */; };
+		61F78FAA2593010E00BE1E3D /* CirrusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F78FA92593010E00BE1E3D /* CirrusUITests.swift */; };
+		61F78FD02596717200BE1E3D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F78FCF2596717200BE1E3D /* APIService.swift */; };
+		61F78FD5259672A300BE1E3D /* OneCallResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F78FD4259672A300BE1E3D /* OneCallResponse.swift */; };
+		61F78FDB2596746900BE1E3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F78FDA2596746900BE1E3D /* Constants.swift */; };
+		61F78FE62596C7F600BE1E3D /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F78FE52596C7F600BE1E3D /* HelperFunctions.swift */; };
+		61F78FEB259906FF00BE1E3D /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F78FEA259906FF00BE1E3D /* ForecastController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61F78F9B2593010E00BE1E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61F78F7C2593010C00BE1E3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61F78F832593010C00BE1E3D;
+			remoteInfo = Cirrus;
+		};
+		61F78FA62593010E00BE1E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61F78F7C2593010C00BE1E3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61F78F832593010C00BE1E3D;
+			remoteInfo = Cirrus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61F78F842593010C00BE1E3D /* Cirrus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cirrus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F78F872593010C00BE1E3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61F78F892593010C00BE1E3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		61F78F8B2593010C00BE1E3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61F78F8E2593010C00BE1E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61F78F902593010E00BE1E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61F78F932593010E00BE1E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61F78F952593010E00BE1E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61F78F9A2593010E00BE1E3D /* CirrusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CirrusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F78F9E2593010E00BE1E3D /* CirrusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirrusTests.swift; sourceTree = "<group>"; };
+		61F78FA02593010E00BE1E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61F78FA52593010E00BE1E3D /* CirrusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CirrusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61F78FA92593010E00BE1E3D /* CirrusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirrusUITests.swift; sourceTree = "<group>"; };
+		61F78FAB2593010E00BE1E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61F78FCF2596717200BE1E3D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		61F78FD4259672A300BE1E3D /* OneCallResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCallResponse.swift; sourceTree = "<group>"; };
+		61F78FDA2596746900BE1E3D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		61F78FE52596C7F600BE1E3D /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		61F78FEA259906FF00BE1E3D /* ForecastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61F78F812593010C00BE1E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61F78F972593010E00BE1E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61F78FA22593010E00BE1E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61F78F7B2593010C00BE1E3D = {
+			isa = PBXGroup;
+			children = (
+				61F78F862593010C00BE1E3D /* Cirrus */,
+				61F78F9D2593010E00BE1E3D /* CirrusTests */,
+				61F78FA82593010E00BE1E3D /* CirrusUITests */,
+				61F78F852593010C00BE1E3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61F78F852593010C00BE1E3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61F78F842593010C00BE1E3D /* Cirrus.app */,
+				61F78F9A2593010E00BE1E3D /* CirrusTests.xctest */,
+				61F78FA52593010E00BE1E3D /* CirrusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61F78F862593010C00BE1E3D /* Cirrus */ = {
+			isa = PBXGroup;
+			children = (
+				61F78FD92596746000BE1E3D /* Constants */,
+				61F78FC32596709500BE1E3D /* Services */,
+				61F78FBF2596707100BE1E3D /* Delegates */,
+				61F78FBE2596706800BE1E3D /* Helpers */,
+				61F78FBD2596705C00BE1E3D /* Models */,
+				61F78F872593010C00BE1E3D /* AppDelegate.swift */,
+				61F78F892593010C00BE1E3D /* SceneDelegate.swift */,
+				61F78F8B2593010C00BE1E3D /* ViewController.swift */,
+				61F78F8D2593010C00BE1E3D /* Main.storyboard */,
+				61F78FEA259906FF00BE1E3D /* ForecastController.swift */,
+				61F78F902593010E00BE1E3D /* Assets.xcassets */,
+				61F78F922593010E00BE1E3D /* LaunchScreen.storyboard */,
+				61F78F952593010E00BE1E3D /* Info.plist */,
+			);
+			path = Cirrus;
+			sourceTree = "<group>";
+		};
+		61F78F9D2593010E00BE1E3D /* CirrusTests */ = {
+			isa = PBXGroup;
+			children = (
+				61F78F9E2593010E00BE1E3D /* CirrusTests.swift */,
+				61F78FA02593010E00BE1E3D /* Info.plist */,
+			);
+			path = CirrusTests;
+			sourceTree = "<group>";
+		};
+		61F78FA82593010E00BE1E3D /* CirrusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61F78FA92593010E00BE1E3D /* CirrusUITests.swift */,
+				61F78FAB2593010E00BE1E3D /* Info.plist */,
+			);
+			path = CirrusUITests;
+			sourceTree = "<group>";
+		};
+		61F78FBD2596705C00BE1E3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61F78FD4259672A300BE1E3D /* OneCallResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61F78FBE2596706800BE1E3D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				61F78FE52596C7F600BE1E3D /* HelperFunctions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		61F78FBF2596707100BE1E3D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		61F78FC32596709500BE1E3D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				61F78FCF2596717200BE1E3D /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		61F78FD92596746000BE1E3D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				61F78FDA2596746900BE1E3D /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61F78F832593010C00BE1E3D /* Cirrus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61F78FAE2593010E00BE1E3D /* Build configuration list for PBXNativeTarget "Cirrus" */;
+			buildPhases = (
+				61F78F802593010C00BE1E3D /* Sources */,
+				61F78F812593010C00BE1E3D /* Frameworks */,
+				61F78F822593010C00BE1E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cirrus;
+			productName = Cirrus;
+			productReference = 61F78F842593010C00BE1E3D /* Cirrus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61F78F992593010E00BE1E3D /* CirrusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61F78FB12593010E00BE1E3D /* Build configuration list for PBXNativeTarget "CirrusTests" */;
+			buildPhases = (
+				61F78F962593010E00BE1E3D /* Sources */,
+				61F78F972593010E00BE1E3D /* Frameworks */,
+				61F78F982593010E00BE1E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61F78F9C2593010E00BE1E3D /* PBXTargetDependency */,
+			);
+			name = CirrusTests;
+			productName = CirrusTests;
+			productReference = 61F78F9A2593010E00BE1E3D /* CirrusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		61F78FA42593010E00BE1E3D /* CirrusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61F78FB42593010E00BE1E3D /* Build configuration list for PBXNativeTarget "CirrusUITests" */;
+			buildPhases = (
+				61F78FA12593010E00BE1E3D /* Sources */,
+				61F78FA22593010E00BE1E3D /* Frameworks */,
+				61F78FA32593010E00BE1E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61F78FA72593010E00BE1E3D /* PBXTargetDependency */,
+			);
+			name = CirrusUITests;
+			productName = CirrusUITests;
+			productReference = 61F78FA52593010E00BE1E3D /* CirrusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61F78F7C2593010C00BE1E3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					61F78F832593010C00BE1E3D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					61F78F992593010E00BE1E3D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 61F78F832593010C00BE1E3D;
+					};
+					61F78FA42593010E00BE1E3D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 61F78F832593010C00BE1E3D;
+					};
+				};
+			};
+			buildConfigurationList = 61F78F7F2593010C00BE1E3D /* Build configuration list for PBXProject "Cirrus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61F78F7B2593010C00BE1E3D;
+			productRefGroup = 61F78F852593010C00BE1E3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61F78F832593010C00BE1E3D /* Cirrus */,
+				61F78F992593010E00BE1E3D /* CirrusTests */,
+				61F78FA42593010E00BE1E3D /* CirrusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61F78F822593010C00BE1E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61F78F942593010E00BE1E3D /* LaunchScreen.storyboard in Resources */,
+				61F78F912593010E00BE1E3D /* Assets.xcassets in Resources */,
+				61F78F8F2593010C00BE1E3D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61F78F982593010E00BE1E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61F78FA32593010E00BE1E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61F78F802593010C00BE1E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61F78FE62596C7F600BE1E3D /* HelperFunctions.swift in Sources */,
+				61F78F8C2593010C00BE1E3D /* ViewController.swift in Sources */,
+				61F78FDB2596746900BE1E3D /* Constants.swift in Sources */,
+				61F78F882593010C00BE1E3D /* AppDelegate.swift in Sources */,
+				61F78FD02596717200BE1E3D /* APIService.swift in Sources */,
+				61F78F8A2593010C00BE1E3D /* SceneDelegate.swift in Sources */,
+				61F78FEB259906FF00BE1E3D /* ForecastController.swift in Sources */,
+				61F78FD5259672A300BE1E3D /* OneCallResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61F78F962593010E00BE1E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61F78F9F2593010E00BE1E3D /* CirrusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61F78FA12593010E00BE1E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61F78FAA2593010E00BE1E3D /* CirrusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61F78F9C2593010E00BE1E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61F78F832593010C00BE1E3D /* Cirrus */;
+			targetProxy = 61F78F9B2593010E00BE1E3D /* PBXContainerItemProxy */;
+		};
+		61F78FA72593010E00BE1E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61F78F832593010C00BE1E3D /* Cirrus */;
+			targetProxy = 61F78FA62593010E00BE1E3D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61F78F8D2593010C00BE1E3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61F78F8E2593010C00BE1E3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61F78F922593010E00BE1E3D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61F78F932593010E00BE1E3D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61F78FAC2593010E00BE1E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61F78FAD2593010E00BE1E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61F78FAF2593010E00BE1E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cirrus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frascello.Cirrus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61F78FB02593010E00BE1E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cirrus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frascello.Cirrus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		61F78FB22593010E00BE1E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CirrusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frascello.CirrusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cirrus.app/Cirrus";
+			};
+			name = Debug;
+		};
+		61F78FB32593010E00BE1E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CirrusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frascello.CirrusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cirrus.app/Cirrus";
+			};
+			name = Release;
+		};
+		61F78FB52593010E00BE1E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CirrusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frascello.CirrusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cirrus;
+			};
+			name = Debug;
+		};
+		61F78FB62593010E00BE1E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CirrusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frascello.CirrusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cirrus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61F78F7F2593010C00BE1E3D /* Build configuration list for PBXProject "Cirrus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61F78FAC2593010E00BE1E3D /* Debug */,
+				61F78FAD2593010E00BE1E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61F78FAE2593010E00BE1E3D /* Build configuration list for PBXNativeTarget "Cirrus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61F78FAF2593010E00BE1E3D /* Debug */,
+				61F78FB02593010E00BE1E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61F78FB12593010E00BE1E3D /* Build configuration list for PBXNativeTarget "CirrusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61F78FB22593010E00BE1E3D /* Debug */,
+				61F78FB32593010E00BE1E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61F78FB42593010E00BE1E3D /* Build configuration list for PBXNativeTarget "CirrusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61F78FB52593010E00BE1E3D /* Debug */,
+				61F78FB62593010E00BE1E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61F78F7C2593010C00BE1E3D /* Project object */;
+}
