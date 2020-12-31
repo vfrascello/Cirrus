@@ -13,8 +13,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     var oneCallResponse: OneCallResponse!
     var locationManager: CLLocationManager!
-    var userLatitude: String!
-    var userLongitude: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,10 +39,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         self.locationManager.stopUpdatingLocation()
         
-         userLatitude = userLocation.coordinate.latitude.description
-         userLongitude = userLocation.coordinate.longitude.description
+         let automaticLatitude = userLocation.coordinate.latitude.description
+         let automaticLongitude = userLocation.coordinate.longitude.description
         
-        APIService.getOneCallResponse(latitude: userLatitude, longitude: userLongitude, completion: { response in
+        APIService.getOneCallResponse(latitude: automaticLatitude, longitude: automaticLongitude, completion: { response in
             
             self.oneCallResponse = response
             
