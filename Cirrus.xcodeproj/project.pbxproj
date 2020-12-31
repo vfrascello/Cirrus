@@ -114,8 +114,6 @@
 				61F78FBF2596707100BE1E3D /* Delegates */,
 				61F78FBE2596706800BE1E3D /* Helpers */,
 				61F78FBD2596705C00BE1E3D /* Models */,
-				61F78F872593010C00BE1E3D /* AppDelegate.swift */,
-				61F78F892593010C00BE1E3D /* SceneDelegate.swift */,
 				61F78F8B2593010C00BE1E3D /* ViewController.swift */,
 				61F78F8D2593010C00BE1E3D /* Main.storyboard */,
 				61F78FEA259906FF00BE1E3D /* ForecastController.swift */,
@@ -163,6 +161,8 @@
 		61F78FBF2596707100BE1E3D /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				61F78F872593010C00BE1E3D /* AppDelegate.swift */,
+				61F78F892593010C00BE1E3D /* SceneDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
